@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Spielfeld</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="node_modules/socket.io-client/socket.io.js"></script>
+    <script src="js/socket-func.js"></script>
+
+</head>
+
+<body>
+    <div class="container" id="size-container">
+        <div class="form-group">
+            <label for="size">Größe des Feldes</label>
+            <select class="form-control" id="size" placeholder="Email">
+                <option value="10">10</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <button class="btn btn-default" type="submit" id="size-submit">Generieren</button>
+        </div>
+    </div>
+
+</body>
+
+</html>
