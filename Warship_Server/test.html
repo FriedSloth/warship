@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+
+<script src="node_modules/socket.io-client/socket.io.js"></script>
+<script type="text/javascript"> var socket = io('http://localhost:3001');
+    socket.emit('user:registration',{name:"Test6", password:"1234"})
+socket.on('user:registration:result',function(res){
+    console.log(res);
+})
+    var token;
+    socket.emit('user:login', {name:"Test6", password:'1234'});
+    socket.on('user:login:result',function(res){
+        token = res;
+        console.log(res, token);
+        socket.emit('user:logout', {name:"Test6", token:token});
+        socket.on('user:logout:result',function(res){
+            console.log(res);
+        })
+    })
+
+
+</script>
+
+</body>
+</html>

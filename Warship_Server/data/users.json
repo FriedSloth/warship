@@ -1,0 +1,39 @@
+{
+    "data": [
+        {
+            "name": "Carsten",
+            "password": "1234",
+            "mmr": 1200
+        },
+        {
+            "name": "Carsten2",
+            "password": "1234",
+            "mmr": 1200
+        },
+        {
+            "name": "asdsa",
+            "password": "asdasd",
+            "mmr": 1200
+        },
+        {
+            "name": "Test1",
+            "password": "1234",
+            "mmr": 1200
+        },
+        {
+            "name": "Test4",
+            "password": "1234",
+            "mmr": 1200
+        },
+        {
+            "name": "Test5",
+            "password": "1234",
+            "mmr": 1200
+        },
+        {
+            "name": "Test6",
+            "password": "1234",
+            "mmr": 1200
+        }
+    ]
+}
